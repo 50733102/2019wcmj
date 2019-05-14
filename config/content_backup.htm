@@ -51,11 +51,44 @@ alert("神奇的事情發生了");
 // ]]></script>
 <p>java script</p>
 <h1>javescript</h1>
-<p></p>
-<p>Sample HTML5 File</p>
-<script type="text/javascript">// <![CDATA[
-            // This function will be called once the page loads completely            function pageLoaded(){                alert("Hello World!");            }
-// ]]></script><h1>期中報告</h1>
+<p><br/><br/><br/></p>
+<p></p><h2>game1亂數產生器</h2>
+<p><button onclick="myFunction()">Try it</button></p>
+<p id="demo"></p>
+<script>// <![CDATA[
+function myFunction() {
+  document.getElementById("demo").innerHTML = Math.floor(Math.random()*10);
+}
+// ]]></script><h2>game2</h2>
+<p><canvas height="300" id="canvas" width="400"> Your browser doesn't support the HTML5 element canvas. </canvas></p>
+<script>// <![CDATA[
+canvas = document.getElementById("canvas");
+ctx = canvas.getContext('2d');
+ 
+function draw(){
+ ctx.beginPath();
+ ctx.strokeStyle = "rgb(200,0,0)";
+ ctx.arc(200, 200,50,0,2*Math.PI, false);
+ ctx.closePath();
+ ctx.stroke();
+}
+ 
+function clear_canvas(){
+// Store the current transformation matrix
+// The save() method pushes the current state onto the stack..
+ctx.save();
+ 
+// Use the identity matrix while clearing the canvas
+// the setTransform() method lets you scale, rotate, move, and skew the current context.
+// setTransform(Horizontal scaling, Horizontal skewing,Vertical skewing, Vertical scaling, Horizontal moving, Vertical moving)
+ctx.setTransform(1, 0, 0, 1, 0, 0);
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+// Restore the transform
+// The restore() method pops the top state on the stack, restoring the context to that state.
+ctx.restore();
+}
+// ]]></script>
+<p><button onclick="draw()">繪圖</button> <button onclick="clear_canvas()">清除</button></p><h1>期中報告</h1>
 <p><a href="https://www.youtube.com/watch?v=BQh65EcLSc8">https://www.youtube.com/watch?v=BQh65EcLSc8</a></p><h1>豆豆龍</h1>
 <p><br/><br/>豆豆龍</p>
 <p>~歡迎來到龍貓的世界~</p>
