@@ -78,35 +78,9 @@ $(document).ready(doSearch);
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='簡介.html'>簡介</a><li><a href='javescript.html'>javescript</a><ul><li><a href='game1亂數產生器.html'>game1亂數產生器</a><li><a href='game2繪圖器.html'>game2繪圖器</a><li><a href='game3.html'>game3</a></li></ul><li><a href='期中報告.html'>期中報告</a><li><a href='豆豆龍.html'>豆豆龍</a><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='git http 與 ssh.html'>git http 與 ssh</a><li><a href='目錄結構.html'>目錄結構</a><li><a href='頁面編輯.html'>頁面編輯</a><ul><li><a href='插入程式碼.html'>插入程式碼</a><ul><li><a href='Java 程式碼.html'>Java 程式碼</a><li><a href='Python 程式碼.html'>Python 程式碼</a><li><a href='C或C++程式碼.html'>C或C++程式碼</a><li><a href='Lua 程式碼.html'>Lua 程式碼</a><li><a href='Javascript 程式碼.html'>Javascript 程式碼</a><li><a href='Html 原始碼.html'>Html 原始碼</a></li></li></ul></ul><li><a href='網際簡報.html'>網際簡報</a><li><a href='網誌編輯.html'>網誌編輯</a><li><a href='已知錯誤.html'>已知錯誤</a></li></ul></nav><section><div id="tipue_search_content">game1亂數產生器 << <a href='game1亂數產生器.html'>Previous</a> <a href='game3.html'>Next</a> >> game3<br /><h1>game2繪圖器</h1>
-<p><canvas height="300" id="canvas" width="400"> Your browser doesn't support the HTML5 element canvas. </canvas></p>
-<script>// <![CDATA[
-canvas = document.getElementById("canvas");
-ctx = canvas.getContext('2d');
- 
-function draw(){
- ctx.beginPath();
- ctx.strokeStyle = "rgb(200,0,0)";
- ctx.arc(200, 200,50,0,2*Math.PI, false);
- ctx.closePath();
- ctx.stroke();
-}
- 
-function clear_canvas(){
-// Store the current transformation matrix
-// The save() method pushes the current state onto the stack..
-ctx.save();
- 
-// Use the identity matrix while clearing the canvas
-// the setTransform() method lets you scale, rotate, move, and skew the current context.
-// setTransform(Horizontal scaling, Horizontal skewing,Vertical skewing, Vertical scaling, Horizontal moving, Vertical moving)
-ctx.setTransform(1, 0, 0, 1, 0, 0);
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-// Restore the transform
-// The restore() method pops the top state on the stack, restoring the context to that state.
-ctx.restore();
-}
-// ]]></script>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='簡介.html'>簡介</a><li><a href='javescript.html'>javescript</a><ul><li><a href='game1亂數產生器.html'>game1亂數產生器</a><li><a href='game2繪圖器.html'>game2繪圖器</a><li><a href='game3骰子遊戲.html'>game3骰子遊戲</a></li></ul><li><a href='期中報告.html'>期中報告</a><li><a href='豆豆龍.html'>豆豆龍</a><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='git http 與 ssh.html'>git http 與 ssh</a><li><a href='目錄結構.html'>目錄結構</a><li><a href='頁面編輯.html'>頁面編輯</a><ul><li><a href='插入程式碼.html'>插入程式碼</a><ul><li><a href='Java 程式碼.html'>Java 程式碼</a><li><a href='Python 程式碼.html'>Python 程式碼</a><li><a href='C或C++程式碼.html'>C或C++程式碼</a><li><a href='Lua 程式碼.html'>Lua 程式碼</a><li><a href='Javascript 程式碼.html'>Javascript 程式碼</a><li><a href='Html 原始碼.html'>Html 原始碼</a></li></li></ul></ul><li><a href='網際簡報.html'>網際簡報</a><li><a href='網誌編輯.html'>網誌編輯</a><li><a href='已知錯誤.html'>已知錯誤</a></li></ul></nav><section><div id="tipue_search_content">game1亂數產生器 << <a href='game1亂數產生器.html'>Previous</a> <a href='game3骰子遊戲.html'>Next</a> >> game3骰子遊戲<br /><h1>game2繪圖器</h1>
+<br/>
+<script></script>
 <p><button onclick="draw()">繪圖</button> <button onclick="clear_canvas()">清除</button></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;p&gt;&lt;canvas height="300" id="canvas" width="400"&gt; Your browser doesn't support the HTML5 element canvas. &lt;/canvas&gt;&lt;/p&gt;
 &lt;script&gt;
@@ -138,4 +112,5 @@ ctx.restore();
 &lt;/script&gt;
 &lt;p&gt;&lt;button onclick="draw()"&gt;繪圖&lt;/button&gt; &lt;button onclick="clear_canvas()"&gt;清除&lt;/button&gt;&lt;/p&gt;
 </pre>
-<p></p><br />game1亂數產生器 << <a href='game1亂數產生器.html'>Previous</a> <a href='game3.html'>Next</a> >> game3</div></section></div></body></html>
+<p></p>
+<br />game1亂數產生器 << <a href='game1亂數產生器.html'>Previous</a> <a href='game3骰子遊戲.html'>Next</a> >> game3骰子遊戲</div></section></div></body></html>
