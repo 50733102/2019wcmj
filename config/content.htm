@@ -213,18 +213,18 @@ function draw2mid() {
 <p>Stage: <input name="stage" type="text" value="First Throw"/> Point: <input name="pv" type="text" value="   "/> Outcome:</p>
 <br/><br/><input name="outcome" type="text" value="     "/></form><h2>ROC flag</h2>
 <!-- 導入 Brython 標準程式庫 -->
-<script src="/get_page/cmsimde/static/brython.js"></script>
-<script src="/get_page/cmsimde/static/brython_stdlib.js"></script>
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
 <p></p>
 <!-- 啟動 Brython -->
-<script>// <![CDATA[
+<script>
 window.onload=function(){
 // 設定 data/py 為共用程式路徑
 brython({debug:1, pythonpath:['./../data/py']});
 }
-// ]]></script>
+</script>
 <p><canvas height="400" id="plotarea" width="600"></canvas></p>
-<script type="text/python">// <![CDATA[
+<script type="text/python">
 # 導入 doc
 from browser import document as doc
 import math
@@ -276,7 +276,7 @@ ctx.closePath()
 # 填色設為白色
 ctx.fillStyle = '#fff'
 ctx.fill()
-// ]]></script><h1>期中報告</h1>
+</script><h1>期中報告</h1>
 <p><a href="https://www.youtube.com/watch?v=BQh65EcLSc8">https://www.youtube.com/watch?v=BQh65EcLSc8</a></p>
 <p></p><h1>豆豆龍</h1>
 <p><br/><br/>豆豆龍</p>
